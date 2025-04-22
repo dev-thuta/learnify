@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body class="bg-snowy">
+    <div class="container-fluid">
+        <!-- header -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex align-items-center justify-content-center">
+                <a href="index.html" class="navbar-brand">
+                    <span class="text-forest fs-1 fw-bold me-1">Learnify</span>
+                    <i class="fa-solid fa-graduation-cap text-forest fs-1"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- content -->
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="card my-3" id="Lfy000001" style="max-width: 33rem;">
+                    <div class="card-header">
+                        M/F POST(1)
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">OrderID - <span class="badge text-bg-light fs-5 text">Lfy000001</span>
+                        </h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Grade - <span class="badge text-bg-light fs-6">G-1</span>
+                            </li>
+                            <li class="list-group-item">Subjects - <span
+                                    class="badge text-bg-light fs-6 me-2">Myanmar</span><span
+                                    class="badge text-bg-light fs-6 me-2">English</span><span
+                                    class="badge text-bg-light fs-6 me-2">Maths</span>
+                            </li>
+                            <li class="list-group-item">Method - <span class="badge text-bg-light fs-6">Guide</span>
+                            </li>
+                            <li class="list-group-item">Location - <span class="badge text-bg-light fs-6">Ahlone</span>
+                            </li>
+                            <li class="list-group-item">Start Date - <span class="badge text-bg-light fs-6">21 April,
+                                    2025</span>
+                            </li>
+                            <li class="list-group-item">Time - <span class="badge text-bg-light fs-6">2:00p.m.</span> -
+                                <span class="badge text-bg-light fs-6">3:30p.m.</span>
+                            </li>
+                            <li class="list-group-item">Days - <span
+                                    class="badge text-bg-light fs-6 me-2">Mon</span><span
+                                    class="badge text-bg-light fs-6 me-2">Tue</span><span
+                                    class="badge text-bg-light fs-6 me-2">Wed</span><span
+                                    class="badge text-bg-light fs-6 me-2">Thur</span>
+                            </li>
+                            <li class="list-group-item">Salary - <span class="badge text-bg-light fs-6">100000
+                                    MMK</span>
+                            </li>
+                            <li class="list-group-item">Note - <span class="text-nighty fs-6">Favour game-based teaching
+                                    methodologies.</span>
+                            </li>
+                            <li class="list-group-item">Disclaimer - <span class="text-danger fs-6">The use of any
+                                    telecommunication devices is strictly prohibited during class time.</span>
+                            </li>
+                        </ul>
+                        <p id="verifyLabel" class="card-text text-nighty">Are you certain that you intend to apply this post?</p>
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <button id="cancelBtn" class="btn btn-danger btn-lg rounded-pill mx-4">
+                                <a href="index.html" class="nav-link">
+                                    <span class="d-none d-lg-inline">Rather not apply </span>
+                                    <i class="fa-solid fa-xmark text-snowy"></i>
+                                </a>
+                            </button>
+                            <button id="applyThisPost" class="btn btn-success btn-lg rounded-pill mx-4" onclick="toggleApplicationForm()">
+                                <a href="#applicationForm" class="nav-link">
+                                    <span class="d-none d-lg-inline">Apply this post </span>
+                                    <i class="fa-solid fa-check text-snowy"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="applicationForm" class="d-none align-items-center justify-content-center">
+                <div class="card my-3" style="max-width: 33rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Application form for - <span class="badge text-bg-light fs-5">Lfy000001</span></h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Would you like to automatically fill your personal data from the cloud? Click here <i class="fa-solid fa-hand-point-right"></i>
+                            <button class="btn btn-light ms-1" onclick="toggleCloud()">
+                                <i class="fa-solid fa-cloud text-nighty fs-5"></i>
+                                <span class="text-nighty d-none d-lg-inline fs-5">Auto-fill data</span>
+                            </button>
+                        </h6>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="validationCustom01" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom02" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="validationCustom02" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustomUsername" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="validationCustomUsername"
+                                        aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom03" class="form-label">Phone number</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">+95</span>
+                                    <input type="text" class="form-control" id="validationCustom03"
+                                        aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid phone number.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="validationCustom04" class="form-label">Email address</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="validationCustom04"
+                                        aria-describedby="inputGroupPrepend" required>
+                                    <span class="input-group-text" id="inputGroupPrepend">@gmail.com</span>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom05" class="form-label">Gender</label>
+                                <select class="form-select" id="validationCustom05" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid gender.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom06" class="form-label">Date of birth</label>
+                                <input type="date" class="form-control" id="validationCustom06" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid date of birth.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom07" class="form-label">City</label>
+                                <input type="text" class="form-control" id="validationCustom07" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom08" class="form-label">State/ Region</label>
+                                <select class="form-select" id="validationCustom08" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="Chin">Chin</option>
+                                    <option value="Kachin">Kachin</option>
+                                    <option value="Kayah">Kayah</option>
+                                    <option value="Kayin">Kayin (Karen)</option>
+                                    <option value="Mon">Mon</option>
+                                    <option value="Rakhine">Rakhine (Arakan)</option>
+                                    <option value="Shan">Shan</option>
+                                    <option value="Ayeyarwady">Ayeyarwady (Irrawaddy)</option>
+                                    <option value="Magway">Magway (Magwe)</option>
+                                    <option value="Mandalay">Mandalay</option>
+                                    <option value="Bago">Bago(Pegu)</option>
+                                    <option value="Sagaing">Sagaing</option>
+                                    <option value="Taninthary">Taninthary (Tenasserim)</option>
+                                    <option value="Yangon">Yangon</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom09" class="form-label">Zip/ Postal code</label>
+                                <input type="text" class="form-control" id="validationCustom09" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom10" class="form-label">Education</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="validationCustom10"
+                                        aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please provide an education information.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom11" class="form-label">Certificates</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="validationCustom11"
+                                        aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a certificate information.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom12" class="form-label">Experience</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="validationCustom12"
+                                        aria-describedby="inputGroupPrepend" required>
+                                    <span class="input-group-text" id="inputGroupPrepend">Years</span>
+                                    <div class="invalid-feedback">
+                                        Please provide an experience years.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        <p><a href="terms_and_conditions.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Agree to terms and conditions</a></p>
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                <button type="reset" class="btn btn-secondary btn-lg rounded-pill mx-4">
+                                    <a href="#" class="nav-link">
+                                        <span class="d-none d-lg-inline">Clear all </span>
+                                        <i class="fa-solid fa-eraser text-snowy"></i>
+                                    </a>
+                                </button>
+                                <button class="btn btn-success btn-lg rounded-pill mx-4" onclick="toggleAlert()">
+                                    <a href="#" class="nav-link">
+                                        <span class="d-none d-lg-inline">Submit </span>
+                                        <i class="fa-solid fa-paper-plane text-snowy"></i>
+                                    </a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="submitAlert" class="alert alert-success d-none" role="alert">
+                Your application has been recorded. <i class="fa-solid fa-circle-check"></i><br>Kindly wait for the response from the Learnify admin team.
+            </div>
+        </div>
+
+        <!-- nav -->
+        <nav class="navbar bg-light opacity-75 sticky-bottom navbar-expand-lg rounded-pill shadow my-3 w-75 mx-auto">
+            <div class="container-fluid">
+                <div class="w-100 d-flex align-items-center justify-content-evenly">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-house text-nighty fs-4 me-2"></i>
+                        <span class="text-nighty d-none d-lg-inline fs-5">Feeds</span>
+                    </a>
+                    <a href="connect.html" class="nav-link">
+                        <i class="fa-solid fa-user-group text-nighty fs-4 me-2"></i>
+                        <span class="position-absolute top-1 start-1 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                        <span class="text-nighty d-none d-lg-inline fs-5">Connect</span>
+                    </a>
+                    <a href="notifications.html" class="nav-link">
+                        <i class="fa-solid fa-bell text-nighty fs-4 me-2"></i>
+                        <span class="position-absolute top-1 start-1 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                        <span class="text-nighty d-none d-lg-inline fs-5">Notifications</span>
+                    </a>
+                    <a href="settings.html" class="nav-link">
+                        <i class="fa-solid fa-gear text-nighty fs-4 me-2"></i>
+                        <span class="text-nighty d-none d-lg-inline fs-5">Settings</span>
+                    </a>
+                    <a href="logout.html" class="nav-link">
+                        <i class="fa-solid fa-right-from-bracket text-nighty fs-4 me-2"></i>
+                        <span class="text-nighty d-none d-lg-inline fs-5">Logout</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            }
+            )
+        }
+        )()
+
+        function toggleApplicationForm() {
+            document.querySelector('#applicationForm').className = "d-flex align-items-center justify-content-center";
+            document.querySelector('#applyThisPost').style.display = "none";
+        }
+
+        function toggleCloud() {
+            document.querySelector('#validationCustom01').value = "Rachel";
+            document.querySelector('#validationCustom02').value = "Lyra Vale";
+            document.querySelector('#validationCustomUsername').value = "rlyrav";
+            document.querySelector('#validationCustom03').value = "9943278143";
+            document.querySelector('#validationCustom04').value = "rlyravale001";
+            document.querySelector('#validationCustom05').value = "Female";
+            document.querySelector('#validationCustom06').value = "2004-12-31";
+            document.querySelector('#validationCustom07').value = "Ahlone";
+            document.querySelector('#validationCustom08').value = "Yangon";
+            document.querySelector('#validationCustom09').value = "11121";
+            document.querySelector('#validationCustom10').value = "Second Year Diploma in Computing";
+            document.querySelector('#validationCustom11').value = "L3DC, L4DC, HND";
+            document.querySelector('#validationCustom12').value = "2";
+        }
+
+        function toggleAlert() {
+            if(document.querySelector('#invalidCheck').checked == true && document.querySelector('#validationCustom01').value != "" && document.querySelector('#validationCustom02').value != "" &&
+            document.querySelector('#validationCustomUsername').value != "" &&
+            document.querySelector('#validationCustom03').value != "" &&
+            document.querySelector('#validationCustom04').value != "" &&
+            document.querySelector('#validationCustom05').value != "" &&
+            document.querySelector('#validationCustom06').value != "" &&
+            document.querySelector('#validationCustom07').value != "" &&
+            document.querySelector('#validationCustom08').value != "" &&
+            document.querySelector('#validationCustom09').value != "" &&
+            document.querySelector('#validationCustom10').value != "" &&
+            document.querySelector('#validationCustom11').value != "" &&
+            document.querySelector('#validationCustom12').value != "") {
+                document.querySelector('#submitAlert').className = "alert alert-success d-block";
+                document.querySelector('#applicationForm').className = "d-none";
+                document.querySelector('#verifyLabel').className = "d-none";
+                document.querySelector('#cancelBtn').className = "d-none";
+            }
+        }
+    </script>
+</body>
+
+</html>

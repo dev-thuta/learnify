@@ -18,63 +18,13 @@
     <div class="container-fluid">
         <!-- header -->
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container-fluid d-flex align-items-center justify-content-center">
                 <a href="index.html" class="navbar-brand">
-                    <span class="text-forest fs-3 fw-bold me-1">Learnify</span><i
-                        class="fa-solid fa-graduation-cap text-forest fs-4"></i>
+                    <span class="text-forest fs-1 fw-bold me-1">Learnify</span>
+                    <i class="fa-solid fa-graduation-cap text-forest fs-1"></i>
                 </a>
-                <button class="btn position-relative" data-bs-toggle="modal" data-bs-target="#notiModal">
-                    <i class="fa-solid fa-bell text-warning fs-4"></i><span
-                        class="position-absolute top-1 start-1 translate-middle p-1 bg-danger border border-light rounded-circle">
-                    </span>
-                </button>
             </div>
         </nav>
-        <!-- notification modal -->
-        <div class="modal fade" id="notiModal" tabindex="-1" aria-labelledby="notiModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="notiModalLabel">Notifications</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="list-group">
-                            <a href="#Lfy000003" class="list-group-item list-group-item-action noti-link"
-                                data-target="#Lfy000003">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">OrderID - Lfy000003</h5>
-                                    <small>2 hours ago</small>
-                                </div>
-                                <p class="mb-1">Check out this post from "Latha".</p>
-                                <small>G-1 100000 MMK</small>
-                            </a>
-                            <a href="#Lfy000002" class="list-group-item list-group-item-action noti-link"
-                                data-target="#Lfy000002">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">OrderID - Lfy000002</h5>
-                                    <small class="text-body-secondary">3 hours ago</small>
-                                </div>
-                                <p class="mb-1">Check out this post from "Latha".</p>
-                                <small class="text-body-secondary">G2 150000 MMK</small>
-                            </a>
-                            <a href="#Lfy000001" class="list-group-item list-group-item-action noti-link"
-                                data-target="#Lfy000001">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">OrderID - Lfy000001</h5>
-                                    <small class="text-body-secondary">2 days ago</small>
-                                </div>
-                                <p class="mb-1">Check out this post from "Latha".</p>
-                                <small class="text-body-secondary">KG 90000 MMK</small>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- content -->
         <div class="container">
             <div class="d-flex align-items-center justify-content-center">
@@ -83,19 +33,23 @@
                         M/F POST(1)
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">OrderID - <span class="badge text-bg-dark fs-5">Lfy000001</span></h5>
+                        <h5 class="card-title">OrderID - <span class="badge text-bg-light fs-5 text">Lfy000001</span>
+                        </h5>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Grade - <span class="badge text-bg-light fs-6">G-1</span></li>
+                            <li class="list-group-item">Grade - <span class="badge text-bg-light fs-6">G-1</span>
+                            </li>
                             <li class="list-group-item">Subjects - <span
                                     class="badge text-bg-light fs-6 me-2">Myanmar</span><span
                                     class="badge text-bg-light fs-6 me-2">English</span><span
-                                    class="badge text-bg-light fs-6 me-2">Maths</span></li>
+                                    class="badge text-bg-light fs-6 me-2">Maths</span>
+                            </li>
                             <li class="list-group-item">Method - <span class="badge text-bg-light fs-6">Guide</span>
                             </li>
-                            <li class="list-group-item">Location - <span class="badge text-bg-light fs-6">Latha</span>
+                            <li class="list-group-item">Location - <span class="badge text-bg-light fs-6">Ahlone</span>
                             </li>
                             <li class="list-group-item">Start Date - <span class="badge text-bg-light fs-6">21 April,
-                                    2025</span></li>
+                                    2025</span>
+                            </li>
                             <li class="list-group-item">Time - <span class="badge text-bg-light fs-6">2:00p.m.</span> -
                                 <span class="badge text-bg-light fs-6">3:30p.m.</span>
                             </li>
@@ -103,20 +57,26 @@
                                     class="badge text-bg-light fs-6 me-2">Mon</span><span
                                     class="badge text-bg-light fs-6 me-2">Tue</span><span
                                     class="badge text-bg-light fs-6 me-2">Wed</span><span
-                                    class="badge text-bg-light fs-6 me-2">Thur</span></li>
+                                    class="badge text-bg-light fs-6 me-2">Thur</span>
+                            </li>
                             <li class="list-group-item">Salary - <span class="badge text-bg-light fs-6">100000
-                                    MMK</span></li>
-                            <li class="list-group-item">Note - <span class="badge text-bg-success fs-6">Prefer
-                                    game-based teaching style.</span></li>
-                            <li class="list-group-item">Disclaimer - <span class="text-danger fs-6">Not allowed
-                                    to use any telecom devices during class
-                                    time.</span></li>
+                                    MMK</span>
+                            </li>
+                            <li class="list-group-item">Note - <span class="text-nighty fs-6">Favour game-based teaching
+                                    methodologies.</span>
+                            </li>
+                            <li class="list-group-item">Disclaimer - <span class="text-danger fs-6">The use of any
+                                    telecommunication devices is strictly prohibited during class time.</span>
+                            </li>
                         </ul>
-                        <p class="card-text text-nighty">To apply this post, please click the button below or contact
-                            09402938502 via viber/ telegram.</p>
-                        <a href="#" class="btn border-secondary">Apply for this post <i
-                                class="fa-solid fa-paper-plane text-nighty"></i>
-                        </a>
+                        <p class="card-text text-nighty">To apply for this post, kindly click the button below or
+                            contact 09402938502 via Viber or Telegram.</p>
+                        <button class="btn btn-light btn-lg">
+                            <a href="apply_post.html" class="nav-link">
+                                <span class="d-none d-lg-inline">Apply for this post </span>
+                                <i class="fa-solid fa-paper-plane text-nighty"></i>
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -125,202 +85,95 @@
                     <img src="images/iCloud Photos (10).jpg" class="card-img-top img-thumbnail"
                         alt="A chocolate cake picture">
                     <div class="card-body">
-                        <h5 class="card-title"><span class="badge text-bg-dark fs-5">Tr. Rachel</span></h5>
-                        <p class="card-text">Hello, I am Teacher Rachel from Ahlone. Feel free to contact me for
-                            part-time teaching jobs near me.</p>
+                        <h5 class="card-title"><span class="badge text-bg-light fs-5">Tr. Rachel</span>
+                        </h5>
+                        <p class="card-text">Hello,<br><span class="ms-2"></span>I am Teacher Rachel from Ahlone. Please
+                            do not hesitate to contact me if you are looking for part-time teaching positions in my
+                            vicinity.</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Grade stack - <span
                                 class="badge text-bg-light me-2 fs-6">KG+12</span><span
-                                class="badge text-bg-light me-2 fs-6">Secondary</span></li>
+                                class="badge text-bg-light me-2 fs-6">GED</span>
+                        </li>
                         <li class="list-group-item">Available locations - <span
                                 class="badge text-bg-light me-2 fs-6">Ahlone</span><span
                                 class="badge text-bg-light me-2 fs-6">Latha</span></li>
                         <li class="list-group-item">Certificates - <span
-                                class="badge text-bg-light me-2 fs-6">ABCD</span>
+                                class="badge text-bg-light me-2 fs-6">ECCD</span>
                         </li>
-                        <li class="list-group-item">Rating - <span class="badge text-bg-primary me-2 fs-6"><i
-                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                    class="fa-solid fa-star-half-stroke"></i></span>
-                        </li>
-                    </ul>
-                    <div class="card-body">
-                        <button class="btn border-secondary me-2">Contact me <i
-                                class="fa-solid fa-envelope text-nighty"></i></button>
-                        <button class="btn border-secondary me-2">Visit my profile <i
-                                class="fa-solid fa-circle-user text-nighty"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="card my-3" id="Lfy000002" style="max-width: 33rem;">
-                    <div class="card-header">
-                        M/F POST(1)
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">OrderID - <span class="badge text-bg-dark fs-5">Lfy000002</span></h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Grade - <span class="badge text-bg-light fs-6">G-1</span></li>
-                            <li class="list-group-item">Subjects - <span
-                                    class="badge text-bg-light fs-6 me-2">Myanmar</span><span
-                                    class="badge text-bg-light fs-6 me-2">English</span><span
-                                    class="badge text-bg-light fs-6 me-2">Maths</span></li>
-                            <li class="list-group-item">Method - <span class="badge text-bg-light fs-6">Guide</span>
-                            </li>
-                            <li class="list-group-item">Location - <span class="badge text-bg-light fs-6">Latha</span>
-                            </li>
-                            <li class="list-group-item">Start Date - <span class="badge text-bg-light fs-6">21 April,
-                                    2025</span></li>
-                            <li class="list-group-item">Time - <span class="badge text-bg-light fs-6">2:00p.m.</span> -
-                                <span class="badge text-bg-light fs-6">3:30p.m.</span>
-                            </li>
-                            <li class="list-group-item">Days - <span
-                                    class="badge text-bg-light fs-6 me-2">Mon</span><span
-                                    class="badge text-bg-light fs-6 me-2">Tue</span><span
-                                    class="badge text-bg-light fs-6 me-2">Wed</span><span
-                                    class="badge text-bg-light fs-6 me-2">Thur</span></li>
-                            <li class="list-group-item">Salary - <span class="badge text-bg-light fs-6">100000
-                                    MMK</span></li>
-                            <li class="list-group-item">Note - <span class="badge text-bg-success fs-6">Prefer
-                                    game-based teaching style.</span></li>
-                            <li class="list-group-item">Disclaimer - <span class="text-danger fs-6">Not allowed
-                                    to use any telecom devices during class
-                                    time.</span></li>
-                        </ul>
-                        <p class="card-text text-nighty">To apply this post, please click the button below or contact
-                            09402938502 via viber/ telegram.</p>
-                        <a href="#" class="btn border-secondary">Apply for this post <i
-                                class="fa-solid fa-paper-plane text-nighty"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="card my-3" style="max-width: 33rem;">
-                    <img src="images/iCloud Photos (3).jpg" class="card-img-top img-thumbnail"
-                        alt="A chocolate cake picture">
-                    <div class="card-body">
-                        <h5 class="card-title"><span class="badge text-bg-dark fs-5">Tr. Rachel</span></h5>
-                        <p class="card-text">Hello, I am Teacher Rachel from Ahlone. Feel free to contact me for
-                            part-time teaching jobs near me.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Grade stack - <span
-                                class="badge text-bg-light me-2 fs-6">KG+12</span><span
-                                class="badge text-bg-light me-2 fs-6">Secondary</span></li>
-                        <li class="list-group-item">Available locations - <span
-                                class="badge text-bg-light me-2 fs-6">Ahlone</span><span
-                                class="badge text-bg-light me-2 fs-6">Latha</span></li>
-                        <li class="list-group-item">Certificates - <span
-                                class="badge text-bg-light me-2 fs-6">ABCD</span>
-                        </li>
-                        <li class="list-group-item">Rating - <span class="badge text-bg-primary me-2 fs-6"><i
-                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                    class="fa-solid fa-star-half-stroke"></i></span>
+                        <li class="list-group-item">Rating - <span class="badge text-bg-light me-2 fs-6"><i
+                                    class="fa-solid fa-star text-warning"></i><i
+                                    class="fa-solid fa-star text-warning"></i><i
+                                    class="fa-solid fa-star text-warning"></i><i
+                                    class="fa-solid fa-star text-warning"></i><i
+                                    class="fa-solid fa-star-half-stroke text-warning"></i>
+                                </span>
+                                <span class="position-absolute top-1 start-1 translate-middle badge rounded-pill bg-danger">
+                                    34
+                                  </span>
                         </li>
                     </ul>
                     <div class="card-body">
-                        <button class="btn border-secondary me-2">Contact me <i
-                                class="fa-solid fa-envelope text-nighty"></i></button>
-                        <button class="btn border-secondary me-2">Visit my profile <i
-                                class="fa-solid fa-circle-user text-nighty"></i></button>
+                        <button class="btn btn-light btn-lg me-2">
+                            <a href="contact_me.html" class="nav-link">
+                                <span class="d-none d-lg-inline">Contact me </span>
+                                <i class="fa-solid fa-envelope text-nighty"></i>
+                            </a>
+                        </button>
+                        <button class="btn btn-light btn-lg me-2">
+                            <a href="visit_profile.html" class="nav-link">
+                                <span class="d-none d-lg-inline">Visit my profile </span>
+                                <i class="fa-solid fa-circle-user text-nighty"></i>
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="card my-3" id="Lfy000003" style="max-width: 33rem;">
-                    <div class="card-header">
-                        M/F POST(1)
-                    </div>
+            <div class="mx-auto" style="max-width: 33rem;">
+                <div class="card" aria-hidden="true">
                     <div class="card-body">
-                        <h5 class="card-title">OrderID - <span class="badge text-bg-dark fs-5">Lfy000003</span></h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Grade - <span class="badge text-bg-light fs-6">G-1</span></li>
-                            <li class="list-group-item">Subjects - <span
-                                    class="badge text-bg-light fs-6 me-2">Myanmar</span><span
-                                    class="badge text-bg-light fs-6 me-2">English</span><span
-                                    class="badge text-bg-light fs-6 me-2">Maths</span></li>
-                            <li class="list-group-item">Method - <span class="badge text-bg-light fs-6">Guide</span>
-                            </li>
-                            <li class="list-group-item">Location - <span class="badge text-bg-light fs-6">Latha</span>
-                            </li>
-                            <li class="list-group-item">Start Date - <span class="badge text-bg-light fs-6">21 April,
-                                    2025</span></li>
-                            <li class="list-group-item">Time - <span class="badge text-bg-light fs-6">2:00p.m.</span> -
-                                <span class="badge text-bg-light fs-6">3:30p.m.</span>
-                            </li>
-                            <li class="list-group-item">Days - <span
-                                    class="badge text-bg-light fs-6 me-2">Mon</span><span
-                                    class="badge text-bg-light fs-6 me-2">Tue</span><span
-                                    class="badge text-bg-light fs-6 me-2">Wed</span><span
-                                    class="badge text-bg-light fs-6 me-2">Thur</span></li>
-                            <li class="list-group-item">Salary - <span class="badge text-bg-light fs-6">100000
-                                    MMK</span></li>
-                            <li class="list-group-item">Note - <span class="badge text-bg-success fs-6">Prefer
-                                    game-based teaching style.</span></li>
-                            <li class="list-group-item">Disclaimer - <span class="text-danger fs-6">Not allowed
-                                    to use any telecom devices during class
-                                    time.</span></li>
-                        </ul>
-                        <p class="card-text text-nighty">To apply this post, please click the button below or contact
-                            09402938502 via viber/ telegram.</p>
-                        <a href="#" class="btn border-secondary">Apply for this post <i
-                                class="fa-solid fa-paper-plane text-nighty"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="card my-3" style="max-width: 33rem;">
-                    <img src="images/iCloud Photos (14).jpg" class="card-img-top img-thumbnail"
-                        alt="A chocolate cake picture">
-                    <div class="card-body">
-                        <h5 class="card-title"><span class="badge text-bg-dark fs-5">Tr. Rachel</span></h5>
-                        <p class="card-text">Hello, I am Teacher Rachel from Ahlone. Feel free to contact me for
-                            part-time teaching jobs near me.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Grade stack - <span
-                                class="badge text-bg-light me-2 fs-6">KG+12</span><span
-                                class="badge text-bg-light me-2 fs-6">Secondary</span></li>
-                        <li class="list-group-item">Available locations - <span
-                                class="badge text-bg-light me-2 fs-6">Ahlone</span><span
-                                class="badge text-bg-light me-2 fs-6">Latha</span></li>
-                        <li class="list-group-item">Certificates - <span
-                                class="badge text-bg-light me-2 fs-6">ABCD</span>
-                        </li>
-                        <li class="list-group-item">Rating - <span class="badge text-bg-primary me-2 fs-6"><i
-                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                    class="fa-solid fa-star-half-stroke"></i></span>
-                        </li>
-                    </ul>
-                    <div class="card-body">
-                        <button class="btn border-secondary me-2">Contact me <i
-                                class="fa-solid fa-envelope text-nighty"></i></button>
-                        <button class="btn border-secondary me-2">Visit my profile <i
-                                class="fa-solid fa-circle-user text-nighty"></i></button>
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                        </p>
+                        <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <!-- nav -->
-        <nav class="navbar sticky-bottom navbar-expand-lg rounded-pill shadow my-3 w-75 mx-auto">
+        <nav class="navbar bg-light opacity-75 sticky-bottom navbar-expand-lg rounded-pill shadow my-3 w-75 mx-auto">
             <div class="container-fluid">
                 <div class="w-100 d-flex align-items-center justify-content-evenly">
-                    <a href="#" class="nav-link"><i class="fa-solid fa-house text-nighty fs-4 me-2"></i><span
-                            class="text-nighty d-none d-lg-inline fs-5">Feeds</span></a>
-                    <a href="#" class="nav-link"><i class="fa-solid fa-user-group text-nighty fs-4 me-2"></i><span
-                            class="position-absolute top-1 start-1 translate-middle p-1 bg-danger border border-light rounded-circle"></span><span
-                            class="text-nighty d-none d-lg-inline fs-5">Connect</span></a>
-                    <a href="#" class="nav-link"><i class="fa-solid fa-gear text-nighty fs-4 me-2"></i><span
-                            class="text-nighty d-none d-lg-inline fs-5">Settings</span></a>
-                    <a href="#" class="nav-link"><i
-                            class="fa-solid fa-right-from-bracket text-nighty fs-4 me-2"></i><span
-                            class="text-nighty d-none d-lg-inline fs-5">Logout</span>
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-house text-nighty fs-4 me-2"></i>
+                        <span class="text-nighty d-none d-lg-inline fs-5">Feeds</span>
+                    </a>
+                    <a href="connect.html" class="nav-link">
+                        <i class="fa-solid fa-user-group text-nighty fs-4 me-2"></i>
+                        <span class="position-absolute top-1 start-1 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                        <span class="text-nighty d-none d-lg-inline fs-5">Connect</span>
+                    </a>
+                    <a href="notifications.html" class="nav-link">
+                        <i class="fa-solid fa-bell text-nighty fs-4 me-2"></i>
+                        <span class="position-absolute top-1 start-1 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                        <span class="text-nighty d-none d-lg-inline fs-5">Notifications</span>
+                    </a>
+                    <a href="settings.html" class="nav-link">
+                        <i class="fa-solid fa-gear text-nighty fs-4 me-2"></i>
+                        <span class="text-nighty d-none d-lg-inline fs-5">Settings</span>
+                    </a>
+                    <a href="logout.html" class="nav-link">
+                        <i class="fa-solid fa-right-from-bracket text-nighty fs-4 me-2"></i>
+                        <span class="text-nighty d-none d-lg-inline fs-5">Logout</span>
                     </a>
                 </div>
             </div>
@@ -330,25 +183,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-    <script>
-        document.querySelectorAll('.noti-link').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const target = this.getAttribute('data-target');
-                const modalEl = document.getElementById('notiModal');
-                const modalInstance = bootstrap.Modal.getInstance(modalEl);
-
-                modalInstance.hide();
-
-                setTimeout(() => {
-                    if (target && document.querySelector(target)) {
-                        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
-                    }
-                }, 300);
-            });
-        });
-    </script>
 </body>
 
 </html>
