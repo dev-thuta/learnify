@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 
-<body class="bg-snowy">
+<body class="bg-snowy" style="background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover; opacity: 0.9;">
     <div class="container-fluid">
         <!-- header -->
         <nav class="navbar navbar-expand-lg">
@@ -343,7 +344,7 @@
         }
 
         function toggleAlert() {
-            if(document.querySelector('#invalidCheck').checked == true && document.querySelector('#validationCustom01').value != "" && document.querySelector('#validationCustom02').value != "" &&
+            if (document.querySelector('#invalidCheck').checked == true && document.querySelector('#validationCustom01').value != "" && document.querySelector('#validationCustom02').value != "" &&
             document.querySelector('#validationCustomUsername').value != "" &&
             document.querySelector('#validationCustom03').value != "" &&
             document.querySelector('#validationCustom04').value != "" &&
