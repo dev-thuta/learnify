@@ -73,18 +73,26 @@
                         <p id="verifyLabel" class="card-text text-nighty">Are you certain that you intend to apply this post?</p>
                         <div class="col-12 d-flex align-items-center justify-content-center">
                             <button id="cancelBtn" class="btn btn-danger btn-lg rounded-pill mx-4">
-                                <a href="index.html" class="nav-link">
-                                    <span class="d-none d-lg-inline">Rather not apply </span>
+                                <a href="index.html#Lfy000001" class="nav-link">
+                                    <span class="d-none text-snowy d-lg-inline">Rather not apply </span>
                                     <i class="fa-solid fa-xmark text-snowy"></i>
                                 </a>
                             </button>
                             <button id="applyThisPost" class="btn btn-success btn-lg rounded-pill mx-4" onclick="toggleApplicationForm()">
                                 <a href="#applicationForm" class="nav-link">
-                                    <span class="d-none d-lg-inline">Apply this post </span>
+                                    <span class="d-none text-snowy d-lg-inline">Apply this post </span>
                                     <i class="fa-solid fa-check text-snowy"></i>
                                 </a>
                             </button>
                         </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-light rounded-circle">
+                            <i class="fa-solid fa-heart text-danger"></i>
+                        </button>
+                        <span class="badge text-bg-light rounded-pill">
+                            <span class="text-nighty">23</span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -92,8 +100,8 @@
                 <div class="card my-3" style="max-width: 33rem;">
                     <div class="card-body">
                         <h5 class="card-title">Application form for - <span class="badge text-bg-light fs-5">Lfy000001</span></h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Would you like to automatically fill your personal data from the cloud? Click here <i class="fa-solid fa-hand-point-right"></i>
-                            <button class="btn btn-light ms-1" onclick="toggleCloud()">
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Would you like to automatically fill your personal data from the cloud? <br>Click here <i class="fa-solid fa-hand-point-right text-nighty"></i>
+                            <button class="btn btn-light border ms-1" onclick="toggleCloud()">
                                 <i class="fa-solid fa-cloud text-nighty fs-5"></i>
                                 <span class="text-nighty d-none d-lg-inline fs-5">Auto-fill data</span>
                             </button>
@@ -194,14 +202,14 @@
                                     Please select a valid state.
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label for="validationCustom09" class="form-label">Zip/ Postal code</label>
                                 <input type="text" class="form-control" id="validationCustom09" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid zip.
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <label for="validationCustom10" class="form-label">Education</label>
                                 <div class="input-group has-validation">
                                     <input type="text" class="form-control" id="validationCustom10"
@@ -211,7 +219,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <label for="validationCustom11" class="form-label">Certificates</label>
                                 <div class="input-group has-validation">
                                     <input type="text" class="form-control" id="validationCustom11"
@@ -221,7 +229,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label for="validationCustom12" class="form-label">Experience</label>
                                 <div class="input-group has-validation">
                                     <input type="text" class="form-control" id="validationCustom12"
@@ -244,15 +252,15 @@
                                 </div>
                             </div>
                             <div class="col-12 d-flex align-items-center justify-content-center">
-                                <button type="reset" class="btn btn-secondary btn-lg rounded-pill mx-4">
+                                <button type="reset" class="btn btn-light btn-lg border rounded-pill mx-4">
                                     <a href="#" class="nav-link">
-                                        <span class="d-none d-lg-inline">Clear all </span>
-                                        <i class="fa-solid fa-eraser text-snowy"></i>
+                                        <span class="text-nighty d-none text-nighty d-lg-inline">Clear all </span>
+                                        <i class="fa-solid fa-eraser text-nighty"></i>
                                     </a>
                                 </button>
                                 <button class="btn btn-success btn-lg rounded-pill mx-4" onclick="toggleAlert()">
                                     <a href="#" class="nav-link">
-                                        <span class="d-none d-lg-inline">Submit </span>
+                                        <span class="d-none text-snowy d-lg-inline">Submit </span>
                                         <i class="fa-solid fa-paper-plane text-snowy"></i>
                                     </a>
                                 </button>
@@ -267,7 +275,7 @@
         </div>
 
         <!-- nav -->
-        <nav class="navbar bg-light opacity-75 sticky-bottom navbar-expand-lg rounded-pill shadow my-3 w-75 mx-auto">
+        <nav class="navbar bg-light sticky-bottom navbar-expand-lg rounded-pill shadow my-3 w-75 mx-auto" style="opacity: 0.9;">
             <div class="container-fluid">
                 <div class="w-100 d-flex align-items-center justify-content-evenly">
                     <a href="index.html" class="nav-link">
